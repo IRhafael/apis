@@ -1,0 +1,14 @@
+Título: Sistema de Refrigeração por Absorção
+
+Resumo: A presente invenção refere-se a um sistema de refrigeração por absorção que utiliza um refrigerante ecológico e uma solução absorvente de alta eficiência. O sistema é projetado para aplicações residenciais e comerciais, proporcionando uma alternativa sustentável aos sistemas de refrigeração convencionais.
+
+Descrição Detalhada: O sistema de refrigeração por absorção inclui um evaporador, um absorvedor, um gerador, um condensador e um circuito de tubulação para interconectar esses componentes. O refrigerante utilizado é um fluido ecológico, como amônia ou uma mistura de hidrocarbonetos, que possui baixo impacto ambiental. A solução absorvente é uma mistura aquosa de brometo de lítio ou outra substância higroscópica que melhora a eficiência do ciclo de absorção.
+
+O processo de refrigeração inicia-se no evaporador, onde o refrigerante evapora a baixa pressão, absorvendo calor do ambiente e proporcionando o efeito refrigerante. O vapor de refrigerante é então absorvido pela solução absorvente no absorvedor, liberando calor. A solução rica em refrigerante é bombeada para o gerador, onde é aquecida, geralmente por uma fonte de energia solar ou elétrica, liberando o refrigerante na forma de vapor. O vapor de refrigerante é então condensado no condensador, liberando calor para o ambiente externo, e o líquido refrigerante retorna ao evaporador para reiniciar o ciclo.
+
+Aplicações: Este sistema é adequado para aplicações em residências, escritórios e outras instalações comerciais que necessitam de um sistema de refrigeração eficiente e ecológico. Pode ser integrado com sistemas de energia solar para melhorar a sustentabilidade e reduzir os custos operacionais.
+
+Reivindicações: 1. Um sistema de refrigeração por absorção que utiliza um refrigerante ecológico, caracterizado por incluir um evaporador, um absorvedor, um gerador, um condensador e uma solução absorvente de alta eficiência.
+2. O sistema de acordo com a reivindicação 1, onde o refrigerante é selecionado entre amônia ou uma mistura de hidrocarbonetos.
+3. O sistema de acordo com a reivindicação 1, onde a solução absorvente é uma mistura aquosa de brometo de lítio.
+4. O sistema de acordo com a reivindicação 1, integrado com um sistema de aquecimento solar para o gerador.
