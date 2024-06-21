@@ -9,7 +9,7 @@ import urllib.request
 import mimetypes
 from bs4 import BeautifulSoup
 
-# Substitua 'sua-chave-api-aqui' pela sua chave da API da OpenAI
+# chave da API da OpenAI
 openai.api_key = os.getenv('OPENAI_API_KEY', 'sk-proj-M94NhKYdeMRfwHHuhvNYT3BlbkFJlnJ2QaPcYwUkzzUwx7WT')
 
 def analisar_patente(descricao):

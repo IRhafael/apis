@@ -1,7 +1,0 @@
-AIzaSyCz6_4ylU9HDarkCDiv1Q9Rx2TNkmsx49Q
-
-# Substitua 'SEU_PROJETO_ID' pelo ID do seu projeto Dialogflow
-project_id = "geminipython-423823"
-
-# Substitua 'SEU_CHAVE_API' pela sua chave API do Dialogflow
-api_key = "AIzaSyCz6_4ylU9HDarkCDiv1Q9Rx2TNkmsx49Q"
