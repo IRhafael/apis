@@ -17,11 +17,11 @@ def analisar_patente(descricao):
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "Você é um assistente especializado em análise de patentes."},
-                {"role": "user", "content": f"Analise a seguinte descrição de patente e forneça um resumo detalhado: {descricao}"}
+                {"role": "system", "content": "Você é um assistente especializado em extratos de contratos de inovação aberta entre a academia e organizações externas."},
+                {"role": "user", "content": f"Classifique o extrato de contrato em algum desses tipos: Licenciamento de: patente, programa de computador, marcas, desenho industrial ou cultivar, venda de: patente, programa de computador, marcas, desenho industrial ou cultivar, cessão de uso, partilhamento de titularidade, encomenda tecnológica, serviço técnico especializado, know-how, acordo de parceria. caso não classifique em nenhum desses tipos coloque o tipo outros. após classificar o tipo de extrato identifique as partes envolvidas com seus respectivos cnpjs, o objeto do contrato,o prazo de validade e a data da assinatura. caso encontre um numero de patente ou um programa de computador ou uma marca ou um desenho industrial ou uma cultivar ou alguma descrição da tecnologia, printe no terminal.  {descricao}"}
             ],
             max_tokens=150,
-            temperature=0.7
+            temperature=0.5
         )
         return response.choices[0].message['content'].strip()
     except openai.error.OpenAIError as e:
@@ -126,16 +126,17 @@ if __name__ == "__main__":
     informacoes = extrair_informacoes(descricao_documento)
 
     # Analisar o conteúdo do documento
-    resumo = analisar_patente(descricao_documento)
+   # resumo = analisar_patente(descricao_documento)
 
     # Mostrar as informações extraídas e o resumo gerado
-    print("Informações extraídas do documento:")
-    print(f"CNPJs: {informacoes['CNPJs']}")
-    print(f"Números de Patente: {informacoes['Números de Patente']}")
-    print(f"Autores e Colaboradores: {informacoes['Autores e Colaboradores']}")
+   # print("Informações extraídas do documento:")
+   # print(f"CNPJs: {informacoes['CNPJs']}")
+   # print(f"Números de Patente: {informacoes['Números de Patente']}")
+   # print(f"Autores e Colaboradores: {informacoes['Autores e Colaboradores']}")
+    #print(f"")
 
-    print("\nResumo do documento:")
-    print(resumo)
+   # print("\nResumo do documento:")
+   # print(resumo)
 
 
 
