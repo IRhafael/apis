@@ -66,8 +66,15 @@ def extrair_texto_json(data):
 
 def enviar_solicitacao_palm(texto):
     """
-    Envia o texto do documento para a API de Análise de Entidades do Google Cloud.
-    Inclui instruções específicas para a IA sobre como deve funcionar.
+ Classifique o extrato de contrato em algum desses tipos: Licenciamento de: patente, programa de computador, marcas, desenho industrial ou cultivar,
+ venda de: patente, programa de computador, marcas, desenho industrial ou cultivar,
+ cessão de uso, partilhamento de titularidade, encomenda tecnológica, serviço técnico especializado,
+ know-how, acordo de parceria.
+ caso não classifique em nenhum desses tipos coloque o tipo outros.
+ após classificar o tipo de extrato identifique as partes envolvidas com seus respectivos cnpjs,
+ o objeto do contrato,o prazo de validade e a data da assinatura.
+ caso encontre um numero de patente ou um programa de computador ou uma marca ou um desenho industrial ou uma cultivar ou alguma descrição da tecnologia, 
+ printe no terminal.
     """
     url = f"https://language.googleapis.com/v1/documents:analyzeEntities?key={API_KEY}"
 
