@@ -1,12 +1,9 @@
 import openai
 import PyPDF2
 import docx
-import os
-import pandas as pd
 import re
 import validators
 import urllib.request
-import mimetypes
 from bs4 import BeautifulSoup
 
 # chave da API da OpenAI
@@ -44,7 +41,7 @@ def analisar_contrato(texto):
     data_assinatura = data_assinatura.group(1) if data_assinatura else "Não identificado"
     
     # Procurar por tecnologias específicas
-    tecnologias = re.findall(r'(patente\s*n\u00ba\s*\d+|programa de computador: .*?|marca: .*?|desenho industrial: .*?|cultivar: .*?)', texto, re.IGNORECASE)
+    tecnologias = re.findall(r'(patente\s*nº\s*\d+|programa de computador: .*?|marca: .*?|desenho industrial: .*?|cultivar: .*?)', texto, re.IGNORECASE)
     for tecnologia in tecnologias:
         print(f"Tecnologia identificada: {tecnologia}")
     
@@ -58,8 +55,12 @@ def analisar_contrato(texto):
 
 def processar_links(arquivo_links):
     # Ler o arquivo com os links
-    with open(arquivo_links, 'r') as file:
-        links = file.readlines()
+    try:
+        with open(arquivo_links, 'r', encoding='utf-8') as file:
+            links = file.readlines()
+    except FileNotFoundError:
+        print(f"Erro: O arquivo {arquivo_links} não foi encontrado.")
+        return
     
     # Processar cada link
     for link in links:
@@ -100,5 +101,5 @@ def processar_links(arquivo_links):
             print(f"Erro ao processar o link {link}: {e}")
 
 # Caminho do arquivo contendo os 200 links
-arquivo_links = '/mnt/data/arquivo_com_200_links.txt'
+arquivo_links = r'C:\AndroidStudio\apis\testegpt\CHATGPT\extratos_200_links.csv'
 processar_links(arquivo_links)
