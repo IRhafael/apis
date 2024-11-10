@@ -1,0 +1,104 @@
+import openai
+import PyPDF2
+import docx
+import os
+import pandas as pd
+import re
+import validators
+import urllib.request
+import mimetypes
+from bs4 import BeautifulSoup
+
+# chave da API da OpenAI
+openai.api_key = os.getenv('OPENAI_API_KEY', 'sua_chave_aqui')
+
+def analisar_contrato(texto):
+    tipos_contrato = [
+        "Licenciamento de: patente", "Licenciamento de: programa de computador", "Licenciamento de: marcas", 
+        "Licenciamento de: desenho industrial", "Licenciamento de: cultivar", "Venda de: patente", 
+        "Venda de: programa de computador", "Venda de: marcas", "Venda de: desenho industrial", "Venda de: cultivar", 
+        "Cessão de uso", "Partilhamento de titularidade", "Encomenda tecnológica", "Serviço técnico especializado", 
+        "Know-how", "Acordo de parceria"
+    ]
+    
+    # Classificar o tipo de contrato
+    tipo = "Outros"
+    for t in tipos_contrato:
+        if t.lower() in texto.lower():
+            tipo = t
+            break
+    
+    # Extrair partes envolvidas e CNPJs
+    partes = re.findall(r'([A-Z\s]+)\s*-\s*CNPJ:\s*(\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2})', texto)
+    
+    # Extrair objeto do contrato
+    objeto = re.search(r'Objeto:\s*(.*?)(\.|\n)', texto)
+    objeto = objeto.group(1).strip() if objeto else "Não identificado"
+    
+    # Extrair prazo de validade
+    prazo = re.search(r'Prazo de validade:\s*(.*?)(\.|\n)', texto)
+    prazo = prazo.group(1).strip() if prazo else "Não identificado"
+    
+    # Extrair data de assinatura
+    data_assinatura = re.search(r'Data de assinatura:\s*(\d{2}/\d{2}/\d{4})', texto)
+    data_assinatura = data_assinatura.group(1) if data_assinatura else "Não identificado"
+    
+    # Procurar por tecnologias específicas
+    tecnologias = re.findall(r'(patente\s*n\u00ba\s*\d+|programa de computador: .*?|marca: .*?|desenho industrial: .*?|cultivar: .*?)', texto, re.IGNORECASE)
+    for tecnologia in tecnologias:
+        print(f"Tecnologia identificada: {tecnologia}")
+    
+    return {
+        "tipo": tipo,
+        "partes": partes,
+        "objeto": objeto,
+        "prazo": prazo,
+        "data_assinatura": data_assinatura
+    }
+
+def processar_links(arquivo_links):
+    # Ler o arquivo com os links
+    with open(arquivo_links, 'r') as file:
+        links = file.readlines()
+    
+    # Processar cada link
+    for link in links:
+        link = link.strip()
+        if not validators.url(link):
+            print(f"Link inválido: {link}")
+            continue
+        
+        try:
+            # Baixar o conteúdo do link
+            response = urllib.request.urlopen(link)
+            content_type = response.headers.get_content_type()
+            
+            if content_type == 'application/pdf':
+                # Ler PDFs
+                with open('/tmp/temp.pdf', 'wb') as f:
+                    f.write(response.read())
+                with open('/tmp/temp.pdf', 'rb') as f:
+                    reader = PyPDF2.PdfFileReader(f)
+                    texto = ''
+                    for page_num in range(reader.numPages):
+                        texto += reader.getPage(page_num).extract_text()
+            elif content_type == 'application/msword' or content_type == 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
+                # Ler arquivos Word
+                with open('/tmp/temp.docx', 'wb') as f:
+                    f.write(response.read())
+                doc = docx.Document('/tmp/temp.docx')
+                texto = '\n'.join([para.text for para in doc.paragraphs])
+            else:
+                # Tentar ler como HTML
+                soup = BeautifulSoup(response, 'html.parser')
+                texto = soup.get_text()
+            
+            # Analisar o contrato
+            resultado = analisar_contrato(texto)
+            print(f"Resultado para o link {link}: {resultado}")
+        except Exception as e:
+            print(f"Erro ao processar o link {link}: {e}")
+
+# Caminho do arquivo contendo os 200 links
+arquivo_links = '/mnt/data/arquivo_com_200_links.txt'
+processar_links(arquivo_links)
