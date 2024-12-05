@@ -1,0 +1,201 @@
+ERROR:root:Erro ao processar o link link_externo: unknown url type: 'link_externo'
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386229387: O contrato pode ser classificado como "Licenciamento de: programa de computador".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-451481421: O contrato se enquadra na categoria de "Know-how".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-245240114: Este contrato pode ser classificado como 'Partilhamento de titularidade'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-408216790: O contrato em questão pode ser classificado como 'Partilhamento de titularidade'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-327423945: O contrato pode ser classificado como 'Partilhamento de titularidade'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-414186209: Este contrato deve ser classificado como: Partilhamento de titularidade.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-414184055: O contrato é da categoria: Partilhamento de titularidade.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-do-terceiro-termo-aditivo-314077500: O contrato pode ser classificado como 'Encomenda tecnológica'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-299481215: O contrato pode ser classificado como Partilhamento de titularidade.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-de-partilhamento-de-titularidade-de-tecnologia-417166108: Este contrato pode ser classificado como "Partilhamento de titularidade".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-414318874: O contrato é de: Partilhamento de titularidade.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-414186132: O tipo de contrato é: Partilhamento de titularidade.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-261097599: O contrato pode ser classificado como: Partilhamento de titularidade.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-380016704: O contrato pode ser classificado como 'Partilhamento de titularidade'.
+INFO:root:Resultado para o link https://www.in.gov.br/en/web/dou/-/extrato-de-contrato-247046353: O contrato que você forneceu se encaixa na categoria de "Partilhamento de titularidade".
+ERROR:root:Erro HTTP ao processar o link https://www.in.gov.br//web//dou//-//extrato-de-contrato-449085525: HTTP Error 404: Not Found
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-de-licenciamento-de-tecnologia-395799692: Informações insuficientes
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-405318118: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386852290: Este contrato pode ser classificado como "Licenciamento de: patente", uma vez que se trata de um contrato de licenciamento para a exploração de uma tecnologia criada.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386852212: O contrato em questão se classifica como 'Licenciamento de: patente'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-247046326: Este contrato é um exemplo de "Partilhamento de titularidade".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386229309: O contrato pode ser classificado como "Licenciamento de: patente", uma vez que se trata de um Contrato de Licenciamento para exploração de criação consubstanciada em Tecnologia.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386939885: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-418817128: Cessão de uso
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-412149445: O contrato se encaixa na categoria de "Licenciamento de: patente".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483820332: O contrato se enquadra na categoria de Serviço técnico especializado.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-483481576: O contrato parece ser um 'Contrato de Cooperação' para o desenvolvimento de um projeto de pesquisa tecnológica, portanto melhor categorizado como 'Acordo de parceria'. No entanto, o contrato também pode ser potencialmente classificado como 'Encomenda tecnológica', uma vez que envolve o desenvolvimento de um projeto tecnológico específico.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483481655: O contrato se enquadra na categoria de 'Serviço técnico especializado'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483504576: Serviço técnico especializado
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483714211: Serviço técnico especializado
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483787234: O contrato se classifica como "Serviço técnico especializado", pois trata da contratação de serviços técnicos especializados na execução de análises químicas.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483817829: Este contrato pode ser categorizado como 'Acordo de parceria'. No mesmo, é mencionado um Termo de Cooperação entre a PETRÓLEO BRASILEIRO S.A. (PETROBRAS) e a UNIVERSIDADE FEDERAL DO RIO DE JANEIRO (UFRJ), com intervenção da FUNDAÇÃO COORDENAÇÃO DE PROJETOS, PESQUISAS E ESTUDOS TECNOLÓGICOS (COPPETEC). O objetivo é a promoção de modificações no escopo original do Plano de Trabalho e a substituição do mesmo e da Planilha de Desembro pelo plano atualizado.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483818099: O contrato se enquadra na categoria de 'Serviço técnico especializado'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483817829: Este contrato pode ser classificado como 'Acordo de parceria', já que envolve a cooperação entre a PETRÓLEO BRASILEIRO S.A. (PETROBRAS) e a UNIVERSIDADE FEDERAL DO RIO DE JANEIRO (UFRJ), com a intervenção da FUNDAÇÃO COORDENAÇÃO DE PROJETOS, PESQUISAS E ESTUDOS TECNOLÓGICOS (COPPETEC), para promoção de modificações em um Plano de Trabalho existente. Além disso, a menção à Lei 10.973/2004, que é a Lei da Inovação Tecnológica no Brasil, sugere que as atividades da parceria envolvam projetos de inovação.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483820332: O contrato se enquadra na categoria de 'Serviço técnico especializado'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483171999: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483787234: O contrato se classifica como: Serviço técnico especializado.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483818099: Serviço técnico especializado
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-encerramento-483820176: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-encerramento-483820176: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483215000: O contrato parece se encaixar na categoria de 'Acordo de parceria', pois envolve a cooperação entre uma universidade e uma empresa, no entanto, as informações não são suficientes para estabelecer uma categoria precisa.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-482517963: O contrato em questão pode ser classificado como 'Encomenda tecnológica'. Esta classificação se baseia na descrição do objeto do contrato: "Desenvolvimento de inibidores de Corrosão com função conjunta de inibição de incrustação à base de Extratos Naturais", o que envolve um trabalho de pesquisa e desenvolvimento tecnológico. Essa classificação também está respaldada pela Fundamento Legal: Lei 10.973/2004, Art. 9º, que se refere à Lei da Inovação tecnológica.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-483481576: Este contrato pode ser classificado como um 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483481655: O contrato se enquadra na categoria de 'Serviço técnico especializado'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483504576: Serviço técnico especializado
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483171999: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483215000: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-482820437: O contrato se classifica como 'Acordo de parceria'. O termo mostra uma cooperação entre a Universidade Federal do Rio de Janeiro (UFRJ) e a Petrobras, indicando que se trata de uma parceria entre as duas entidades. Além disso, a referência à Lei 10.973/2004 (Lei da Inovação Tecnológica) sugere que essa parceria pode envolver atividades de pesquisa e desenvolvimento tecnológico.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-482496006: O contrato pode ser classificado como "Encomenda tecnológica" e "Serviço técnico especializado". Além disso, há um componente de "Know-how", já que menciona a "transferência de conhecimento".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-482517877: O contrato se classifica na categoria de 'Serviço técnico especializado'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-482820437: Este contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-482496006: O contrato em questão pode ser classificado como "Serviço técnico especializado" e "Know-how", pois envolve a contratação de serviços técnicos especializados para a criação de um software sob encomenda e a transferência de conhecimento (know-how) da Universidade Federal do Rio de Janeiro (UFRJ) ao Serviço Nacional de Aprendizagem Comercial (SENAC). Além disso, pode ser considerado também uma "Encomenda tecnológica" dado que há a geração de um software sob medida.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-n-1/2022-prppi/ifal-483448430: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-482816386: Informações insuficientes
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-n-2/2023-482622320: Serviço técnico especializado
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-cooperacao-tecnica-act-n-10/2023-uasg-153045-482623977: O contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-482517877: O contrato em questão pode ser classificado como 'Serviço técnico especializado'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-cooperacao-tecnica-act-n-10/2023-uasg-153045-482623977: O contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-482517963: Este contrato é classificado como um 'Serviço técnico especializado'. É um acordo de cooperação entre a Universidade Federal do Rio de Janeiro e a Petrobras para o desenvolvimento de inibidores de corrosão. Esta classificação se justifica pela natureza do trabalho a ser realizado, que requer especial expertise técnica na área.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-encerramento-482518031: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-255930268: O contrato se enquadra na categoria: Licenciamento de: programa de computador.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumento-contratual-271303584: O contrato pode ser classificado como "Licenciamento de: patente". Embora o contrato não mencione explicitamente qual propriedade intelectual está sendo licenciada, o termo "royalties" é geralmente associado ao licenciamento de patentes. No entanto, seria útil confirmar essa suposição com mais informações sobre o acordo específico entre a Universidade de Brasília e a Poiato Recicla LTDA - ME.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extratos-de-instrumentos-contratuais-277499438: O contrato se enquadra na categoria: Licenciamento de: patente.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-n-9306/2023-uasg-154040-480660519: Serviço técnico especializado
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumento-contratual-291709863: Este contrato pode ser classificado como 'Partilhamento de titularidade'. O contrato refere-se ao compartilhamento de direitos de propriedade intelectual entre a Universidade de Brasília e a Universidade Estadual de Campinas sobre uma tecnologia específica. Portanto, envolve a partilha de direitos ou titularidade de uma propriedade intelectual.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-481314850: O contrato se enquadra na categoria de 'Serviço técnico especializado'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-n-2/2023-482622320: Serviço técnico especializado
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-244632275: Este contrato pode ser classificado como "Acordo de parceria" já que envolve a execução de atividades de pesquisa e desenvolvimento entre diversas entidades.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-encerramento-482518031: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-482816386: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratual-287614227: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratual-414535482: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-parceria-481629555: Este contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-para-pesquisa-desenvolvimento-e-inovacao-n-7/2023-482163062: O contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483714211: Serviço técnico especializado
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-cooperacao-300263419: O contrato se classifica como "Acordo de parceria".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-248097636: Este contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-249285185: O contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-271734326: Este contrato pode ser classificado como um 'Acordo de parceria', pois envolve cooperação técnica e científica entre as partes para desenvolvimento de um projeto.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-307069844: O contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-408212428: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extratos-de-instrumentos-contratuais-412501068: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/edital-n-1-de-9-de-fevereiro-de-2021-303068578: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/resultado-de-julgamento-304817459: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-447679409: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/edital-de-6-de-julho-de-2022condicoes-gerais-n-1-413495752: Informações insuficientes
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-352131675: O contrato se enquadra na categoria de "Acordo de parceria".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-271734966: O contrato parece ser um "Acordo de parceria".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-281565497: O contrato em questão pode ser classificado como "Acordo de parceria".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-290968753: Este contrato pode ser classificado como um 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-291720095: O contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-292596396: O contrato pode ser classificado como "Acordo de Parceria".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-cooperacao-tecnica-296241931: O contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-307898477: O contrato pode ser classificado como: Acordo de parceria.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-283600962: O contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-parceria-290388448: Este contrato pode ser classificado como um 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-308437203: O contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-312442312: Acordo de parceria
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-315855920: Este contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-316817976: Este contrato pode ser classificado como um "Acordo de parceria".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-protocolo-de-intencoes-318006625: Informações insuficientes
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-457511986: O contrato apresentado se classifica como Acordo de parceria, visto que envolve a colaboração entre a FUNDAÇÃO UNIVERSIDADE DO ESTADO DO RIO GRANDE DO NORTE e a UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE para a melhoria e evolução dos sistemas SIG-UFRN.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-481914328: Encomenda tecnológica
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-para-pesquisa-desenvolvimento-e-inovacao-n-7/2023-482163062: O contrato pode ser classificado como "Acordo de parceria".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-480305232: Este contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-n-9306/2023-uasg-154040-480660519: Serviço técnico especializado
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-327478093: O contrato pode ser classificado como 'Acordo de Parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-331648563: Este contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-342483104: O contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-343120833: Acordo de parceria
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-343120911: Acordo de parceria
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-343129028: Este contrato se enquadra na categoria de "Acordo de parceria".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-343334531: O contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-343342266: Acordo de parceria
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-343379060: O contrato pode ser classificado como "Acordo de parceria".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-343379138: O contrato se classifica como: Acordo de parceria.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-343379216: Acordo de parceria
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/resultado-de-julgamento-309117555: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/resultado-de-julgamento-315568912: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-318311755: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-318627427: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/edital-n-5-de-17-de-maio-de-2021-320827664: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-318604131: O contrato citado se enquadra na categoria "Acordo de parceria".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-325240789: O contrato se enquadra na categoria: Acordo de parceria.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumento-contratual-344356496: O contrato poderia ser classificado como "Partilhamento de titularidade", já que se refere ao reconhecimento mútuo de direitos e ao estabelecimento de obrigações em relação à propriedade intelectual de uma determinada tecnologia.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extratos-de-instrumentos-contratuais-322213084: Informações insuficientes
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/edital-n-1-de-1-de-outubro-de-2021-350216726: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/edital-350788355: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/retificacao-352534075: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/edital-n-216-de-26-de-outubro-de-2021-355687031: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-366305585: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-366995923: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-dispensa-de-licitacao-368094395: O contrato pode ser classificado como "Licenciamento de: patente".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/edital-n-77-de-21-de-fevereiro-de-2022-382813919: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-389027781: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/retificacao-415215898: Informações insuficientes
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/comunicadoresultado-final-n-6-424306847: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-de-adesao-431479031: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/editalresultado-final-n-6-432136566: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/comunicado-n-6/2022-437452395: Informações insuficientes
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-adesao-438928920: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumento-contratual-440742397: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumento-contratual-446840514: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-449454932: Este contrato pode ser classificado como "Licenciamento de: patente".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumento-contratual-450594503: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/comunicado-n-12-462078669: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/comunicado-n-15-467912353: Informações insuficientes
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-473208278: <urlopen error timed out>
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/comunicado-n-18-de-28-de-marco-de-2023resultado-final-05/2022-2024/2023/dpi-/-nitcdt-/-cedes-/-nme-474657371: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-477814855: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumento-contratual-482503352: Informações insuficientes
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-326356992: Acordo de parceria
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-parceria-346005530: Acordo de parceria
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-cooperacao-tecnica-347738112: O contrato é uma forma de 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-convenio-339595432: Informações insuficientes.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-350367155: Acordo de parceria
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-350737327: O contrato é um "Acordo de parceria".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-351037561: O contrato se enquadra na categoria: Acordo de parceria.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-384322748: O contrato se encaixa na categoria de 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-354726638: O contrato se enquadra na categoria de "Licenciamento de: programa de computador".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-355679933: Este contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-362185824: O contrato pode ser classificado como 'Acordo de parceria', onde a Fundação Norte-Rio-Grandense de Pesquisa e Cultura (FUNPEC) auxilia financeiramente a Universidade Federal do Rio Grande do Norte (UFRN) para a execução de um projeto de pesquisa científica aplicada.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-364852841: O contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-368080501: O contrato pode ser classificado como 'Acordo de parceria'.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-368814323: O contrato pode ser classificado como "Acordo de parceria".
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-480418283: Informações insuficientes.
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-n-390/2021-366635921: <urlopen error [WinError 10065] Uma operação de soquete foi tentada em um host inacessível>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-n-270/2020-302270374: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-n-53/2021-318010441: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-n-108/2021-327252657: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-271734966: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-368828777: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-368828777: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-deparceria-371332487: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-373130390: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-373702114: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-377912895: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-381819865: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-385559678: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-389022521: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-389022599: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-389082830: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-390650826: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-400311811: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-402714083: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-convenio-407600745: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-413843742: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-415211925: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-415226627: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-419761885: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-425953238: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-428121540: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-435695476: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-436016513: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-438991322: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-441127960: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-448732884: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-451780331: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-451869001: <urlopen error [Errno 11001] getaddrinfo failed>
+ERROR:root:Erro ao processar o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-453373273: <urlopen error [Errno 11001] getaddrinfo failed>
