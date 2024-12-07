@@ -1,20 +1,15 @@
 import openai
-import os
-import PyPDF2
-import docx
 import urllib.request
 from bs4 import BeautifulSoup
 import time
 import pandas as pd
-from pdf2image import convert_from_path
-import pytesseract
 import logging
 
 # Configuração do logging
 logging.basicConfig(level=logging.INFO, filename='processamento.log', filemode='w')
 
 # Configuração da chave da API da OpenAI
-openai.api_key = os.getenv('OPENAI_API_KEY', 'sk-proj-M94NhKYdeMRfwHHuhvNYT3BlbkFJlnJ2QaPcYwUkzzUwx7WT')
+openai.api_key = "sk-proj-M94NhKYdeMRfwHHuhvNYT3BlbkFJlnJ2QaPcYwUkzzUwx7WT"
 
 # Tipos de contrato predefinidos
 tipos_contrato = [
@@ -22,23 +17,30 @@ tipos_contrato = [
     "Licenciamento de: desenho industrial", "Licenciamento de: cultivar", "Venda de: patente",
     "Venda de: programa de computador", "Venda de: marcas", "Venda de: desenho industrial", "Venda de: cultivar",
     "Cessão de uso", "Partilhamento de titularidade", "Encomenda tecnológica", "Serviço técnico especializado",
-    "Know-how", "Acordo de parceria"
+    "Tranferência de Know-how", "Acordo de parceria"
 ]
 
 # Função para analisar o texto do contrato usando a OpenAI
 def analisar_contrato_com_openai(texto):
     inicio = time.time()  # Registra o tempo inicial
     prompt = f"""
-    Classifique o seguinte contrato em uma das categorias: {', '.join(tipos_contrato)}.
-    Se não houver informações suficientes, responda com 'Informações insuficientes'.
+    Você é um assistente especializado em classificação de contratos legais. 
+    Sua tarefa é classificar o texto a seguir em uma das categorias: {', '.join(tipos_contrato)}.
+
+    Diretrizes:
+    1. Leia o texto cuidadosamente e procure palavras-chave relacionadas às categorias mencionadas.
+    2. Se o texto for muito curto ou incompleto, use inferências baseadas nos termos e frases disponíveis.
+    3. Se não for possível determinar com segurança a categoria, responda com 'Informações insuficientes'.
+    4. Se houver indícios de múltiplas categorias, escolha a mais relevante com base no contexto geral.
+
     Texto do contrato:
-    {texto[:2000]}
+    {texto[:2000]}  # Limite de 2000 caracteres para evitar excesso de tokens.
     """
     try:
         response = openai.ChatCompletion.create(
             model="gpt-4",
             messages=[
-                {"role": "system", "content": "Você é um assistente que classifica contratos."},
+                {"role": "system", "content": "Você é um assistente especializado em análise de contratos legais."},
                 {"role": "user", "content": prompt}
             ]
         )
@@ -48,7 +50,7 @@ def analisar_contrato_com_openai(texto):
     except Exception as e:
         return f"Erro: {str(e)}", 0
 
-# Função para processar os links
+# Função para processar os links HTML
 def processar_links(arquivo_links):
     # Ler o arquivo com os links
     try:
@@ -66,31 +68,8 @@ def processar_links(arquivo_links):
         try:
             # Baixar o conteúdo do link
             response = urllib.request.urlopen(link, timeout=10)
-            content_type = response.headers.get_content_type()
-
-            if content_type == 'application/pdf':
-                # Ler PDFs
-                with open('/tmp/temp.pdf', 'wb') as f:
-                    f.write(response.read())
-                with open('/tmp/temp.pdf', 'rb') as f:
-                    reader = PyPDF2.PdfReader(f)
-                    texto = ''.join(page.extract_text() for page in reader.pages)
-
-                # Usar OCR se necessário
-                if not texto.strip():
-                    pages = convert_from_path('/tmp/temp.pdf', 500)
-                    texto = ''.join(pytesseract.image_to_string(page) for page in pages)
-
-            elif content_type in ['application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document']:
-                # Ler arquivos Word
-                with open('/tmp/temp.docx', 'wb') as f:
-                    f.write(response.read())
-                doc = docx.Document('/tmp/temp.docx')
-                texto = '\n'.join([para.text for para in doc.paragraphs])
-            else:
-                # Tentar ler como HTML
-                soup = BeautifulSoup(response, 'html.parser')
-                texto = soup.get_text(separator="\n").strip()
+            soup = BeautifulSoup(response, 'html.parser')
+            texto = soup.get_text(separator="\n").strip()
 
             # Limpeza básica do texto extraído
             texto = '\n'.join([linha.strip() for linha in texto.split("\n") if len(linha.strip()) > 10])
