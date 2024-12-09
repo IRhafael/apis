@@ -1,16 +1,15 @@
-import urllib.request
-from bs4 import BeautifulSoup
+import json
 import time
-import pandas as pd
 import logging
-import requests  # Para fazer chamadas HTTP
-from llama import LlamaClient
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
 
 # Configuração do logging
 logging.basicConfig(level=logging.INFO, filename='processamento.log', filemode='w')
 
 # Configuração da chave da API do Llama
-LLAMA_API_KEY = "LA-49dc442b8eaa462681286796b99887c6b1ed5b26d6034d1bbe881038df403f6a"  # Substitua com a chave da API do Llama
+LLAMA_API_KEY = "LA-17fd50dacb4a45288ea892d6769a6ddd89340018688447fda07038790a29b5f6"  # Substitua com o seu token de API
 
 # Tipos de contrato predefinidos
 tipos_contrato = [
@@ -18,7 +17,7 @@ tipos_contrato = [
     "Licenciamento de: desenho industrial", "Licenciamento de: cultivar", "Venda de: patente",
     "Venda de: programa de computador", "Venda de: marcas", "Venda de: desenho industrial", "Venda de: cultivar",
     "Cessão de uso", "Partilhamento de titularidade", "Encomenda tecnológica", "Serviço técnico especializado",
-    "Tranferência de Know-how", "Acordo de parceria"
+    "Transferência de Know-how", "Acordo de parceria"
 ]
 
 # Função para analisar o texto do contrato usando a API do Llama
@@ -40,22 +39,26 @@ def analisar_contrato_com_llama(texto):
     {texto[:2000]}  # Limite de 2000 caracteres para evitar excesso de tokens.
     """
 
-    # API URL (substitua com a URL correta da API do Llama)
-    llama_url = "https://api.llama.ai/classify"
-
+    llama_url = "https://api.llama.ai/chat/completions"  # Verifique se o endpoint está correto
     headers = {
-        'Authorization': f'Bearer {LLAMA_API_KEY}',  # Token de autorização
+        'Authorization': f'Bearer {LLAMA_API_KEY}',
         'Content-Type': 'application/json',
     }
 
     data = {
-        'prompt': prompt
+        'model': 'llama-3.0',  # Substitua com o modelo correto
+        'messages': [{'role': 'user', 'content': prompt}]
     }
 
     try:
         response = requests.post(llama_url, json=data, headers=headers)
         response.raise_for_status()
-        classificacao = response.json()['classification']  # Ajuste com base na estrutura de resposta da Llama API
+
+        # Verifique o que está retornando na resposta
+        print("Resposta da API:", response.json())
+
+        # Ajuste conforme a estrutura da resposta da API
+        classificacao = response.json()['choices'][0]['message']['content']
         fim = time.time()  # Calcula o tempo gasto
         return classificacao, fim - inicio
     except requests.exceptions.RequestException as e:
@@ -75,8 +78,8 @@ def processar_links(arquivo_links):
     for link in links:
         link = link.strip()
         try:
-            response = urllib.request.urlopen(link, timeout=10)
-            soup = BeautifulSoup(response, 'html.parser')
+            response = requests.get(link, timeout=10)
+            soup = BeautifulSoup(response.text, 'html.parser')
             texto = soup.get_text(separator="\n").strip()
 
             texto = '\n'.join([linha.strip() for linha in texto.split("\n") if len(linha.strip()) > 10])
@@ -91,10 +94,7 @@ def processar_links(arquivo_links):
             resultados.append({"Link": link, "Classificação": classificacao, "Tempo de Resposta (s)": tempo_resposta})
             logging.info(f"Resultado para o link {link}: {classificacao}")
 
-        except urllib.error.HTTPError as e:
-            logging.error(f"Erro HTTP ao processar o link {link}: {e}")
-            resultados.append({"Link": link, "Classificação": f"Erro HTTP: {e.code}", "Tempo de Resposta (s)": 0})
-        except Exception as e:
+        except requests.exceptions.RequestException as e:
             logging.error(f"Erro ao processar o link {link}: {e}")
             resultados.append({"Link": link, "Classificação": f"Erro: {str(e)}", "Tempo de Resposta (s)": 0})
 
@@ -104,6 +104,5 @@ def processar_links(arquivo_links):
     print(f"Resultados salvos em {output_file}")
 
 # Caminho do arquivo contendo os links
-arquivo_links = r'C:\AndroidStudio\apis\testegpt\CHATGPT\extratos_200_links.csv'
+arquivo_links = r'C:\AndroidStudio\apis\testellama\llama\links.csv'
 processar_links(arquivo_links)
-
