@@ -1,4 +1,3 @@
-import json
 import time
 import logging
 import requests
@@ -8,8 +7,8 @@ import pandas as pd
 # Configuração do logging
 logging.basicConfig(level=logging.INFO, filename='processamento.log', filemode='w')
 
-# Configuração da chave da API do Llama
-LLAMA_API_KEY = "LA-17fd50dacb4a45288ea892d6769a6ddd89340018688447fda07038790a29b5f6"  # Substitua com o seu token de API
+# Configuração da chave da API do Claude
+CLAUDE_API_KEY = "sua_chave_api_aqui"  # Substitua com o token de acesso da API do Claude
 
 # Tipos de contrato predefinidos
 tipos_contrato = [
@@ -20,8 +19,8 @@ tipos_contrato = [
     "Transferência de Know-how", "Acordo de parceria"
 ]
 
-# Função para analisar o texto do contrato usando a API do Llama
-def analisar_contrato_com_llama(texto):
+# Função para analisar o texto do contrato usando a API do Claude
+def analisar_contrato_com_claude(texto):
     inicio = time.time()  # Registra o tempo inicial
 
     prompt = f"""
@@ -33,32 +32,29 @@ def analisar_contrato_com_llama(texto):
     2. Se o texto for muito curto ou incompleto, use inferências baseadas nos termos e frases disponíveis.
     3. Se não for possível determinar com segurança a categoria, responda com 'Informações insuficientes'.
     4. Se houver indícios de múltiplas categorias, escolha a mais relevante com base no contexto geral.
-    5. Não dê informações extras, somente classifique o tipo de contrato.
-    6. 
     Texto do contrato:
     {texto[:2000]}  # Limite de 2000 caracteres para evitar excesso de tokens.
     """
 
-    llama_url = "https://api.llama.ai/chat/completions"  # Verifique se o endpoint está correto
+    claude_url = "https://api.anthropic.com/v1/complete"  # Endpoint da API do Claude
     headers = {
-        'Authorization': f'Bearer {LLAMA_API_KEY}',
+        'x-api-key': CLAUDE_API_KEY,
         'Content-Type': 'application/json',
     }
 
     data = {
-        'model': 'llama-3.0',  # Substitua com o modelo correto
-        'messages': [{'role': 'user', 'content': prompt}]
+        "prompt": prompt,
+        "model": "claude-2",  # Substitua com o modelo específico do Claude
+        "max_tokens_to_sample": 300,
+        "stop_sequences": ["\n\n"]
     }
 
     try:
-        response = requests.post(llama_url, json=data, headers=headers)
+        response = requests.post(claude_url, json=data, headers=headers)
         response.raise_for_status()
 
-        # Verifique o que está retornando na resposta
-        print("Resposta da API:", response.json())
-
-        # Ajuste conforme a estrutura da resposta da API
-        classificacao = response.json()['choices'][0]['message']['content']
+        # Extrai a resposta da API
+        classificacao = response.json()["completion"]
         fim = time.time()  # Calcula o tempo gasto
         return classificacao, fim - inicio
     except requests.exceptions.RequestException as e:
@@ -89,8 +85,8 @@ def processar_links(arquivo_links):
                 resultados.append({"Link": link, "Classificação": "Texto insuficiente ou ilegível", "Tempo de Resposta (s)": 0})
                 continue
 
-            # Classificar o contrato usando a API do Llama
-            classificacao, tempo_resposta = analisar_contrato_com_llama(texto)
+            # Classificar o contrato usando a API do Claude
+            classificacao, tempo_resposta = analisar_contrato_com_claude(texto)
             resultados.append({"Link": link, "Classificação": classificacao, "Tempo de Resposta (s)": tempo_resposta})
             logging.info(f"Resultado para o link {link}: {classificacao}")
 
@@ -99,10 +95,10 @@ def processar_links(arquivo_links):
             resultados.append({"Link": link, "Classificação": f"Erro: {str(e)}", "Tempo de Resposta (s)": 0})
 
     df = pd.DataFrame(resultados)
-    output_file = "classificacao_contratos_llama.xlsx"
+    output_file = "classificacao_contratos_claude.xlsx"
     df.to_excel(output_file, index=False)
     print(f"Resultados salvos em {output_file}")
 
 # Caminho do arquivo contendo os links
-arquivo_links = r'C:\AndroidStudio\apis\testellama\llama\links.csv'
+arquivo_links = r'C:\AndroidStudio\apis\claude\links.csv'
 processar_links(arquivo_links)
