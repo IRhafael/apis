@@ -1,3 +1,4 @@
+import os
 import time
 import logging
 import requests
@@ -8,7 +9,7 @@ import pandas as pd
 logging.basicConfig(level=logging.INFO, filename='processamento.log', filemode='w')
 
 # Configuração da chave da API do Claude
-CLAUDE_API_KEY = "sua_chave_api_aqui"  # Substitua com o token de acesso da API do Claude
+CLAUDE_API_KEY = "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"  # Substitua com o token de acesso da API do Claude
 
 # Tipos de contrato predefinidos
 tipos_contrato = [
@@ -36,30 +37,33 @@ def analisar_contrato_com_claude(texto):
     {texto[:2000]}  # Limite de 2000 caracteres para evitar excesso de tokens.
     """
 
-    claude_url = "https://api.anthropic.com/v1/complete"  # Endpoint da API do Claude
+    claude_url = "https://api.anthropic.com/v1/messages"  # Endpoint correto
     headers = {
         'x-api-key': CLAUDE_API_KEY,
         'Content-Type': 'application/json',
     }
 
     data = {
-        "prompt": prompt,
-        "model": "claude-2",  # Substitua com o modelo específico do Claude
-        "max_tokens_to_sample": 300,
-        "stop_sequences": ["\n\n"]
+        "model": "claude-3-haiku-20240307",  # Modelo específico que você deseja usar
+        "messages": [{"role": "user", "content": prompt}],
+        "max_tokens": 300,  # Limite de tokens que você pode usar
+        "anthropic_version": "2023-06-01"
     }
 
-    try:
-        response = requests.post(claude_url, json=data, headers=headers)
-        response.raise_for_status()
+try:
+    # Enviando a requisição POST
+    claude_url = "https://api.anthropic.com/v1/messages"  # Defina a variável antes
+    response = requests.post(claude_url, json=data, headers=headers)
+    response.raise_for_status()  # Levanta um erro se a requisição falhar
+    
+    # Resposta correta
+    response_data = response.json()
+    classificacao = response_data['content'][0]['text'].strip()
+    print(f"Classificação: {classificacao}")
 
-        # Extrai a resposta da API
-        classificacao = response.json()["completion"]
-        fim = time.time()  # Calcula o tempo gasto
-        return classificacao, fim - inicio
-    except requests.exceptions.RequestException as e:
-        return f"Erro: {str(e)}", 0
-
+except requests.exceptions.RequestException as e:
+    logging.error(f"Erro na requisição: {e}")
+    logging.error(f"Detalhes do erro: {response.text if response else 'Sem resposta'}")
 # Função para processar os links HTML
 def processar_links(arquivo_links):
     try:
@@ -100,5 +104,5 @@ def processar_links(arquivo_links):
     print(f"Resultados salvos em {output_file}")
 
 # Caminho do arquivo contendo os links
-arquivo_links = r'C:\AndroidStudio\apis\claude\links.csv'
+arquivo_links = r'C:\AndroidStudio\apis\testeclaude\links03.csv'
 processar_links(arquivo_links)
