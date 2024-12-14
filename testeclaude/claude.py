@@ -37,17 +37,17 @@ def analisar_contrato_com_claude(texto):
     {texto[:2000]}  # Limite de 2000 caracteres para evitar excesso de tokens.
     """
 
-    claude_url = "https://api.anthropic.com/v1/complete"  # Endpoint correto
+    claude_url = "https://api.anthropic.com/v1/messages"
     headers = {
-        'x-api-key': CLAUDE_API_KEY,
-        'Content-Type': 'application/json',
+        'anthropic-version': '2023-06-01',
+        'x-api-key': os.getenv('CLAUDE_API_KEY'),  # Certifique-se de configurar a variável de ambiente
+        'content-type': 'application/json'
     }
 
     data = {
-        "model": "claude-3-haiku-20240307",  # Modelo específico que você deseja usar
-        "prompt": prompt,
-        "max_tokens_to_sample": 300,  # Limite de tokens que você pode usar
-        "stop_sequences": ["\n\n"]
+        "model": "claude-3-haiku-20240307",
+        "messages": prompt,
+        "max_tokens": 300
     }
 
     try:
