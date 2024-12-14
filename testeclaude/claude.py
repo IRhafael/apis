@@ -9,7 +9,7 @@ import pandas as pd
 logging.basicConfig(level=logging.INFO, filename='processamento.log', filemode='w')
 
 # Configuração da chave da API do Claude
-CLAUDE_API_KEY = "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"  # Substitua com o token de acesso da API do Claude
+CLAUDE_API_KEY = "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"  # Substitua com o token de acesso da API do Claude
 
 # Tipos de contrato predefinidos
 tipos_contrato = [
@@ -37,7 +37,7 @@ def analisar_contrato_com_claude(texto):
     {texto[:2000]}  # Limite de 2000 caracteres para evitar excesso de tokens.
     """
 
-    claude_url = "https://api.anthropic.com/v1/messages"  # Endpoint correto
+    claude_url = "https://api.anthropic.com/v1/complete"  # Endpoint correto
     headers = {
         'x-api-key': CLAUDE_API_KEY,
         'Content-Type': 'application/json',
@@ -45,25 +45,29 @@ def analisar_contrato_com_claude(texto):
 
     data = {
         "model": "claude-3-haiku-20240307",  # Modelo específico que você deseja usar
-        "messages": [{"role": "user", "content": prompt}],
-        "max_tokens": 300,  # Limite de tokens que você pode usar
-        "anthropic_version": "2023-06-01"
+        "prompt": prompt,
+        "max_tokens_to_sample": 300,  # Limite de tokens que você pode usar
+        "stop_sequences": ["\n\n"]
     }
 
-try:
-    # Enviando a requisição POST
-    claude_url = "https://api.anthropic.com/v1/messages"  # Defina a variável antes
-    response = requests.post(claude_url, json=data, headers=headers)
-    response.raise_for_status()  # Levanta um erro se a requisição falhar
-    
-    # Resposta correta
-    response_data = response.json()
-    classificacao = response_data['content'][0]['text'].strip()
-    print(f"Classificação: {classificacao}")
+    try:
+        # Enviando a requisição POST
+        response = requests.post(claude_url, json=data, headers=headers)
+        response.raise_for_status()  # Levanta um erro se a requisição falhar
+        
+        # Resposta correta
+        response_data = response.json()
+        classificacao = response_data['completion'].strip()
+        fim = time.time()  # Registra o tempo final
+        tempo_resposta = fim - inicio  # Calcula o tempo de resposta
+        return classificacao, tempo_resposta
 
-except requests.exceptions.RequestException as e:
-    logging.error(f"Erro na requisição: {e}")
-    logging.error(f"Detalhes do erro: {response.text if response else 'Sem resposta'}")
+    except requests.exceptions.RequestException as e:
+        logging.error(f"Erro na requisição: {e}")
+        if response:
+            logging.error(f"Detalhes do erro: {response.text}")
+        return "Erro na requisição", 0
+
 # Função para processar os links HTML
 def processar_links(arquivo_links):
     try:
@@ -106,3 +110,4 @@ def processar_links(arquivo_links):
 # Caminho do arquivo contendo os links
 arquivo_links = r'C:\AndroidStudio\apis\testeclaude\links03.csv'
 processar_links(arquivo_links)
+
