@@ -9,7 +9,7 @@ import pandas as pd
 logging.basicConfig(level=logging.INFO, filename='processamento.log', filemode='w')
 
 # Configuração da chave da API do Claude
-CLAUDE_API_KEY = "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"  # Substitua com o token de acesso da API do Claude
+CLAUDE_API_KEY = "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"  # Substitua com o token de acesso da API do Claude
 
 # Tipos de contrato predefinidos
 tipos_contrato = [

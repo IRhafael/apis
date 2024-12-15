@@ -105,5 +105,5 @@ def processar_links(arquivo_links):
     print(f"Resultados salvos em {output_file}")
 
 # Caminho do arquivo contendo os links
-arquivo_links = r'C:\AndroidStudio\apis\testellama\llama\links.csv'
+arquivo_links = r'C:\AndroidStudio\apis\testellama\links.csv'
 processar_links(arquivo_links)
