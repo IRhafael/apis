@@ -1,5 +1,2 @@
-INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386229387: Erro: 401 Client Error: Unauthorized for url: https://api.llama.ai/chat/completions
-INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-451481421: Erro: 401 Client Error: Unauthorized for url: https://api.llama.ai/chat/completions
-INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-245240114: Erro: 401 Client Error: Unauthorized for url: https://api.llama.ai/chat/completions
-INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-408216790: Erro: 401 Client Error: Unauthorized for url: https://api.llama.ai/chat/completions
-INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-327423945: Erro: 401 Client Error: Unauthorized for url: https://api.llama.ai/chat/completions
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386229387: Erro: 404 Client Error: Not Found for url: https://api.llama-api.com/
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-451481421: Erro: 404 Client Error: Not Found for url: https://api.llama-api.com/

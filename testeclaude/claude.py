@@ -9,7 +9,7 @@ import pandas as pd
 logging.basicConfig(level=logging.INFO, filename='processamento.log', filemode='w')
 
 # Configuração da chave da API do Claude
-CLAUDE_API_KEY = "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"  # Substitua com o token de acesso da API do Claude
+CLAUDE_API_KEY = "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"  # Substitua com o token de acesso da API do Claude
 
 # Tipos de contrato predefinidos
 tipos_contrato = [
@@ -37,17 +37,16 @@ def analisar_contrato_com_claude(texto):
     {texto[:2000]}  # Limite de 2000 caracteres para evitar excesso de tokens.
     """
 
-    claude_url = "https://api.anthropic.com/v1/messages"
+    claude_url = "https://api.anthropic.com/v1/complete"
     headers = {
-        'anthropic-version': '2023-06-01',
-        'x-api-key': os.getenv('CLAUDE_API_KEY'),  # Certifique-se de configurar a variável de ambiente
+        'x-api-key': CLAUDE_API_KEY,
         'content-type': 'application/json'
     }
 
     data = {
-        "model": "claude-3-haiku-20240307",
-        "messages": prompt,
-        "max_tokens": 300
+        "model": "claude-3.5-2023-10-22",
+        "prompt": prompt,
+        "max_tokens_to_sample": 300
     }
 
     try:
@@ -110,4 +109,5 @@ def processar_links(arquivo_links):
 # Caminho do arquivo contendo os links
 arquivo_links = r'C:\AndroidStudio\apis\testeclaude\links03.csv'
 processar_links(arquivo_links)
+
 

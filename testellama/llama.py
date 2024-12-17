@@ -40,7 +40,7 @@ def analisar_contrato_com_llama(texto):
     {texto[:2000]}  # Limite de 2000 caracteres para evitar excesso de tokens.
     """
 
-    llama_url = "https://api.llama.ai/chat/completions"  # Verifique se o endpoint está correto
+    llama_url = "https://api.llama-api.com"  # Verifique se o endpoint está correto
     headers = {
         'Authorization': f'Bearer {LLAMA_API_KEY}',
         'Content-Type': 'application/json',
