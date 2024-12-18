@@ -1,0 +1,399 @@
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386229387: Licenciamento de: programa de computador
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-451481421: Transferência de Know-how
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-245240114: Partilhamento de titularidade
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-408216790: Partilhamento de titularidade
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-327423945: Partilhamento de titularidade
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-414186209: Partilhamento de titularidade
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-414184055: Partilhamento de titularidade
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-do-terceiro-termo-aditivo-314077500: Encomenda tecnológica
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-299481215: Partilhamento de titularidade
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-de-partilhamento-de-titularidade-de-tecnologia-417166108: Partilhamento de titularidade
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-414318874: Partilhamento de titularidade
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-414186132: Partilhamento de titularidade
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-261097599: Partilhamento de titularidade
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-380016704: Partilhamento de titularidade
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/en/web/dou/-/extrato-de-contrato-247046353: Partilhamento de titularidade
+ERROR:root:Erro HTTP ao processar o link https://www.in.gov.br//web//dou//-//extrato-de-contrato-449085525: HTTP Error 404: Not Found
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-de-licenciamento-de-tecnologia-395799692: Licenciamento de: patente
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-405318118: Informações insuficientes
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386852290: Licenciamento de: patente
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386852212: Licenciamento de: patente
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-247046326: Partilhamento de titularidade
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386229309: Licenciamento de: patente
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386939885: Licenciamento de: patente
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-418817128: Cessão de uso
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-412149445: Licenciamento de: patente
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483820332: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-483481576: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483481655: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483504576: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483714211: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483787234: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483817829: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483818099: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483817829: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483820332: Serviço técnico especializado.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483171999: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483787234: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483818099: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-encerramento-483820176: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-encerramento-483820176: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483215000: Encomenda tecnológica
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-482517963: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-483481576: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483481655: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483504576: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483171999: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483215000: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-482820437: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-482496006: Encomenda tecnológica
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-482517877: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-482820437: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-482496006: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-n-1/2022-prppi/ifal-483448430: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-482816386: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-n-2/2023-482622320: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-cooperacao-tecnica-act-n-10/2023-uasg-153045-482623977: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-482517877: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-cooperacao-tecnica-act-n-10/2023-uasg-153045-482623977: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-482517963: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-encerramento-482518031: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-255930268: Licenciamento de: programa de computador
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumento-contratual-271303584: Licenciamento de: patente
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extratos-de-instrumentos-contratuais-277499438: Licenciamento de: patente
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-n-9306/2023-uasg-154040-480660519: Encomenda tecnológica
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumento-contratual-291709863: Partilhamento de titularidade
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-481314850: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-n-2/2023-482622320: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-244632275: Encomenda tecnológica
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-encerramento-482518031: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-482816386: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratual-287614227: Licenciamento de: patente
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratual-414535482: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-parceria-481629555: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-para-pesquisa-desenvolvimento-e-inovacao-n-7/2023-482163062: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483714211: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-cooperacao-300263419: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-248097636: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-249285185: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-271734326: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-307069844: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-408212428: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extratos-de-instrumentos-contratuais-412501068: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/edital-n-1-de-9-de-fevereiro-de-2021-303068578: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/resultado-de-julgamento-304817459: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-447679409: Licenciamento de: patente
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/edital-de-6-de-julho-de-2022condicoes-gerais-n-1-413495752: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-352131675: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-271734966: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-281565497: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-290968753: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-291720095: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-292596396: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-cooperacao-tecnica-296241931: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-307898477: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-283600962: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-parceria-290388448: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-308437203: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-312442312: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-315855920: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-316817976: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-protocolo-de-intencoes-318006625: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-457511986: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-481914328: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-para-pesquisa-desenvolvimento-e-inovacao-n-7/2023-482163062: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-480305232: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-n-9306/2023-uasg-154040-480660519: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-327478093: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-331648563: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-342483104: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-343120833: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-343120911: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-343129028: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-343334531: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-343342266: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-343379060: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-343379138: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-343379216: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/resultado-de-julgamento-309117555: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/resultado-de-julgamento-315568912: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-318311755: Partilhamento de titularidade
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-318627427: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/edital-n-5-de-17-de-maio-de-2021-320827664: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-318604131: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-325240789: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumento-contratual-344356496: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extratos-de-instrumentos-contratuais-322213084: Informações insuficientes
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/edital-n-1-de-1-de-outubro-de-2021-350216726: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/edital-350788355: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/retificacao-352534075: Informações insuficientes
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/edital-n-216-de-26-de-outubro-de-2021-355687031: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-366305585: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-366995923: Serviço técnico especializado
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-dispensa-de-licitacao-368094395: Licenciamento de: patente
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/edital-n-77-de-21-de-fevereiro-de-2022-382813919: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-389027781: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/retificacao-415215898: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/comunicadoresultado-final-n-6-424306847: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-de-adesao-431479031: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/editalresultado-final-n-6-432136566: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/comunicado-n-6/2022-437452395: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-adesao-438928920: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumento-contratual-440742397: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumento-contratual-446840514: Licenciamento de: programa de computador
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-449454932: Licenciamento de: patente
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumento-contratual-450594503: Licenciamento de: cultivar
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/comunicado-n-12-462078669: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/comunicado-n-15-467912353: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-473208278: Encomenda tecnológica
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/comunicado-n-18-de-28-de-marco-de-2023resultado-final-05/2022-2024/2023/dpi-/-nitcdt-/-cedes-/-nme-474657371: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumentos-contratuais-477814855: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-instrumento-contratual-482503352: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-326356992: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-parceria-346005530: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-cooperacao-tecnica-347738112: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-convenio-339595432: Encomenda tecnológica
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-350367155: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-350737327: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-351037561: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-384322748: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-354726638: Licenciamento de: programa de computador
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-355679933: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-362185824: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-364852841: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-368080501: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-368814323: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-480418283: Informações insuficientes.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-n-390/2021-366635921: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-n-270/2020-302270374: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-n-53/2021-318010441: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-n-108/2021-327252657: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-271734966: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-368828777: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-368828777: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-deparceria-371332487: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-373130390: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-373702114: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-377912895: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-381819865: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-385559678: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-389022521: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-389022599: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-389082830: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-390650826: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-400311811: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-402714083: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-convenio-407600745: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-413843742: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-415211925: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-415226627: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-419761885: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-425953238: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-428121540: Acordo de parceria.
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-435695476: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-436016513: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-438991322: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-441127960: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-parceria-448732884: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-451780331: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-451869001: Acordo de parceria
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-453373273: Acordo de parceria

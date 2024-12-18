@@ -1,2 +1,2 @@
-INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386229387: Erro: 404 Client Error: Not Found for url: https://api.llama-api.com/
-INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-451481421: Erro: 404 Client Error: Not Found for url: https://api.llama-api.com/
+INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386229387: Erro: 'ChatCompletionResponse' object is not subscriptable
