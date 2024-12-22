@@ -1,27 +1,23 @@
-import requests
+from anthropic import Anthropic, CompletionRequest
 
-api_key = "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"  # Substitua pelo seu token real
+# Inicializar o cliente Anthropic com a chave da API
+client = Anthropic(api_key="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")
 
-headers = {
-    "Authorization": f"Bearer {api_key}",
-    "Content-Type": "application/json"
-}
+# Criar a requisição de completude
+request = CompletionRequest(
+    model="claude-3-5-sonnet-20241022",
+    max_tokens=1024,
+    messages=[{"role": "user", "content": "Hello, world"}]
+)
 
-data = {
-    "prompt": "Teste de autenticação"
-}
+# Enviar a requisição e obter a resposta
+response = client.create_completion(request)
 
-try:
-    response = requests.post(
-        "https://api.anthropic.com/v1/messages",
-        headers=headers,
-        json=data
-    )
-    response.raise_for_status()
-    print("Autenticação bem-sucedida. Resposta:", response.json())
-except requests.exceptions.HTTPError as err:
-    print(f"Erro na requisição: {err}")
-except Exception as e:
-    print(f"Outro erro ocorreu: {e}")
+# Verificar e imprimir a resposta
+if response:
+    print("Resposta da API:", response['completion'])
+else:
+    print("Erro na solicitação")
+
 
 

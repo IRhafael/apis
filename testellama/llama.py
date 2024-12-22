@@ -12,6 +12,9 @@ logging.basicConfig(level=logging.INFO, filename='processamento.log', filemode='
 # Configuração da chave da API do Llama
 LLAMA_API_KEY = "LA-17fd50dacb4a45288ea892d6769a6ddd89340018688447fda07038790a29b5f6"  # Substitua com o seu token de API
 
+# Inicialização do SDK
+llama = LlamaAPI(LLAMA_API_KEY)
+
 # Tipos de contrato predefinidos
 tipos_contrato = [
     "Licenciamento de: patente", "Licenciamento de: programa de computador", "Licenciamento de: marcas",
@@ -40,29 +43,26 @@ def analisar_contrato_com_llama(texto):
     {texto[:2000]}  # Limite de 2000 caracteres para evitar excesso de tokens.
     """
 
-    llama_url = "https://api.llama-api.com"  # Verifique se o endpoint está correto
-    headers = {
-        'Authorization': f'Bearer {LLAMA_API_KEY}',
-        'Content-Type': 'application/json',
-    }
-
-    data = {
-        'model': 'llama-3.0',  # Substitua com o modelo correto
-        'messages': [{'role': 'user', 'content': prompt}]
+    api_request_json = {
+        "model": "llama3.1-70b",  # Substitua com o modelo correto
+        "messages": [{"role": "user", "content": prompt}],
+        "stream": False
     }
 
     try:
-        response = requests.post(llama_url, json=data, headers=headers)
-        response.raise_for_status()
+        response = llama.run(api_request_json)
+
+        # Convertendo a resposta para um dicionário
+        response_dict = response.json()
 
         # Verifique o que está retornando na resposta
-        print("Resposta da API:", response.json())
+        print("Resposta da API:", response_dict)
 
         # Ajuste conforme a estrutura da resposta da API
-        classificacao = response.json()['choices'][0]['message']['content']
+        classificacao = response_dict['choices'][0]['message']['content']
         fim = time.time()  # Calcula o tempo gasto
         return classificacao, fim - inicio
-    except requests.exceptions.RequestException as e:
+    except Exception as e:
         return f"Erro: {str(e)}", 0
 
 # Função para processar os links HTML
@@ -107,3 +107,4 @@ def processar_links(arquivo_links):
 # Caminho do arquivo contendo os links
 arquivo_links = r'C:\AndroidStudio\apis\testellama\links.csv'
 processar_links(arquivo_links)
+
