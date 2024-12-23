@@ -1,0 +1,39 @@
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386229387: Licenciamento de: programa de computador
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-451481421: Transferência de Know-how
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-245240114: Partilhamento de titularidade
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-408216790: Partilhamento de titularidade
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-327423945: Partilhamento de titularidade
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-414186209: Partilhamento de titularidade
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-414184055: Partilhamento de titularidade
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-do-terceiro-termo-aditivo-314077500: Encomenda tecnológica
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-299481215: Partilhamento de titularidade
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-de-partilhamento-de-titularidade-de-tecnologia-417166108: Partilhamento de titularidade
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-414318874: Partilhamento de titularidade
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-414186132: Partilhamento de titularidade
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-261097599: Partilhamento de titularidade
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-380016704: Partilhamento de titularidade
+INFO:root:Resultado para o link https://www.in.gov.br/en/web/dou/-/extrato-de-contrato-247046353: Partilhamento de titularidade
+ERROR:root:Erro HTTP ao processar o link https://www.in.gov.br//web//dou//-//extrato-de-contrato-449085525: HTTP Error 404: Not Found
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-de-licenciamento-de-tecnologia-395799692: Licenciamento de: patente
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-405318118: Licenciamento de: patente
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386852290: Licenciamento de: patente
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386852212: O texto trata de um contrato de Licenciamento de: patente.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-247046326: Partilhamento de titularidade
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386229309: Licenciamento de: patente
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-386939885: Licenciamento de: patente
+INFO:openai:error_code=rate_limit_exceeded error_message='Rate limit reached for gpt-4 in organization org-0YYFHY9RIjwmgjizIGmuh2iS on tokens per min (TPM): Limit 10000, Used 9339, Requested 856. Please try again in 1.17s. Visit https://platform.openai.com/account/rate-limits to learn more.' error_param=None error_type=tokens message='OpenAI API error received' stream_error=False
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-418817128: Erro: Rate limit reached for gpt-4 in organization org-0YYFHY9RIjwmgjizIGmuh2iS on tokens per min (TPM): Limit 10000, Used 9339, Requested 856. Please try again in 1.17s. Visit https://platform.openai.com/account/rate-limits to learn more.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-412149445: Licenciamento de: patente
+INFO:openai:error_code=rate_limit_exceeded error_message='Rate limit reached for gpt-4 in organization org-0YYFHY9RIjwmgjizIGmuh2iS on tokens per min (TPM): Limit 10000, Used 9608, Requested 856. Please try again in 2.784s. Visit https://platform.openai.com/account/rate-limits to learn more.' error_param=None error_type=tokens message='OpenAI API error received' stream_error=False
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483820332: Erro: Rate limit reached for gpt-4 in organization org-0YYFHY9RIjwmgjizIGmuh2iS on tokens per min (TPM): Limit 10000, Used 9608, Requested 856. Please try again in 2.784s. Visit https://platform.openai.com/account/rate-limits to learn more.
+INFO:openai:error_code=rate_limit_exceeded error_message='Rate limit reached for gpt-4 in organization org-0YYFHY9RIjwmgjizIGmuh2iS on tokens per min (TPM): Limit 10000, Used 9298, Requested 856. Please try again in 924ms. Visit https://platform.openai.com/account/rate-limits to learn more.' error_param=None error_type=tokens message='OpenAI API error received' stream_error=False
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-acordo-483481576: Erro: Rate limit reached for gpt-4 in organization org-0YYFHY9RIjwmgjizIGmuh2iS on tokens per min (TPM): Limit 10000, Used 9298, Requested 856. Please try again in 924ms. Visit https://platform.openai.com/account/rate-limits to learn more.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483481655: Serviço técnico especializado
+INFO:openai:error_code=rate_limit_exceeded error_message='Rate limit reached for gpt-4 in organization org-0YYFHY9RIjwmgjizIGmuh2iS on tokens per min (TPM): Limit 10000, Used 9190, Requested 854. Please try again in 264ms. Visit https://platform.openai.com/account/rate-limits to learn more.' error_param=None error_type=tokens message='OpenAI API error received' stream_error=False
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483504576: Erro: Rate limit reached for gpt-4 in organization org-0YYFHY9RIjwmgjizIGmuh2iS on tokens per min (TPM): Limit 10000, Used 9190, Requested 854. Please try again in 264ms. Visit https://platform.openai.com/account/rate-limits to learn more.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483714211: Serviço técnico especializado
+INFO:openai:error_code=rate_limit_exceeded error_message='Rate limit reached for gpt-4 in organization org-0YYFHY9RIjwmgjizIGmuh2iS on tokens per min (TPM): Limit 10000, Used 9490, Requested 857. Please try again in 2.082s. Visit https://platform.openai.com/account/rate-limits to learn more.' error_param=None error_type=tokens message='OpenAI API error received' stream_error=False
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483787234: Erro: Rate limit reached for gpt-4 in organization org-0YYFHY9RIjwmgjizIGmuh2iS on tokens per min (TPM): Limit 10000, Used 9490, Requested 857. Please try again in 2.082s. Visit https://platform.openai.com/account/rate-limits to learn more.
+INFO:openai:error_code=rate_limit_exceeded error_message='Rate limit reached for gpt-4 in organization org-0YYFHY9RIjwmgjizIGmuh2iS on tokens per min (TPM): Limit 10000, Used 9193, Requested 854. Please try again in 282ms. Visit https://platform.openai.com/account/rate-limits to learn more.' error_param=None error_type=tokens message='OpenAI API error received' stream_error=False
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-483817829: Erro: Rate limit reached for gpt-4 in organization org-0YYFHY9RIjwmgjizIGmuh2iS on tokens per min (TPM): Limit 10000, Used 9193, Requested 854. Please try again in 282ms. Visit https://platform.openai.com/account/rate-limits to learn more.
+INFO:root:Resultado para o link https://www.in.gov.br/web/dou/-/extrato-de-contrato-483818099: Serviço técnico especializado
