@@ -44,7 +44,6 @@ def analisar_contrato_com_openai(texto):
     3. Se não for possível determinar com segurança a categoria, responda com 'Informações insuficientes'.
     4. Se houver indícios de múltiplas categorias, escolha a mais relevante com base no contexto geral.
     5. Não dê informações extras, somente classifique o tipo de contrato.
-    6. 
     Texto do contrato:
     {texto[:2000]}  # Limite de 2000 caracteres para evitar excesso de tokens.
     """

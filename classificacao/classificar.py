@@ -74,7 +74,7 @@ def comparar_classificacoes(df_classificacoes, df_gabarito):
 classificacoes_path = "C:/AndroidStudio/apis/classificacao/resultados/resultadosGPT.xlsx"  # Substitua com o arquivo real de classificações preditas
 
 # Caminho para o gabarito com as classificações reais (certifique-se de ter o arquivo como CSV)
-gabarito_path = "C:/AndroidStudio/apis/classificacao/gabaritotemporario.xlsx"  # Substitua com o caminho real do gabarito
+gabarito_path = "C:/AndroidStudio/apis/classificacao/gabarito.csv"  # Substitua com o caminho real do gabarito
 
 # Ler os arquivos
 df_classificacoes = pd.read_excel(classificacoes_path)  # Usando pd.read_excel para arquivos .xlsx
