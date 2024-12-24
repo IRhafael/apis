@@ -1,21 +1,7 @@
-import time
-import logging
-import requests
-from bs4 import BeautifulSoup
 import pandas as pd
-import json
-from llamaapi import LlamaAPI
+from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 
-# Configuração do logging
-logging.basicConfig(level=logging.INFO, filename='processamento.log', filemode='w')
-
-# Configuração da chave da API do Llama
-LLAMA_API_KEY = "LA-17fd50dacb4a45288ea892d6769a6ddd89340018688447fda07038790a29b5f6"  # Substitua com o seu token de API
-
-# Inicialização do SDK
-llama = LlamaAPI(LLAMA_API_KEY)
-
-# Tipos de contrato predefinidos
+# Dicionário de categorias válidas com palavras-chave
 tipos_contrato = {
     "Licenciamento de: patente": ["licenciamento", "patente", "exploração", "INPI", "tecnologia", "registro", "propriedade intelectual", "exclusividade"],
     "Licenciamento de: programa de computador": ["licenciamento", "software", "programa de computador", "código-fonte", "direitos de uso", "desenvolvimento de software"],
@@ -35,87 +21,48 @@ tipos_contrato = {
     "Acordo de parceria": ["acordo de parceria", "pesquisa", "desenvolvimento", "inovação", "colaboração", "cooperativa", "joint venture", "parceria", "acordo de colaboração"]
 }
 
-# Função para analisar o texto do contrato usando a API do Llama
-def analisar_contrato_com_llama(texto):
-    inicio = time.time()  # Registra o tempo inicial
-
-    prompt = f"""
-    Você é um assistente especializado em classificação de contratos legais. 
-    Sua tarefa é classificar o texto a seguir em uma das categorias: {', '.join(tipos_contrato)}.
-
-    Diretrizes:
-    1. Leia o texto cuidadosamente e procure palavras-chave relacionadas às categorias mencionadas.
-    2. Se o texto for muito curto ou incompleto, use inferências baseadas nos termos e frases disponíveis.
-    3. Se não for possível determinar com segurança a categoria, responda com 'Informações insuficientes'.
-    4. Se houver indícios de múltiplas categorias, escolha a mais relevante com base no contexto geral.
-    5. Não dê informações extras, somente classifique o tipo de contrato.
-    6. 
-    Texto do contrato:
-    {texto[:2000]}  # Limite de 2000 caracteres para evitar excesso de tokens.
+def mapear_categoria(predicao):
     """
+    Mapeia a classificação predita para a categoria correta com base no dicionário de palavras-chave.
+    """
+    for categoria, palavras_chave in tipos_contrato.items():
+        if any(palavra in predicao.lower() for palavra in palavras_chave):
+            return categoria
+    return "informações insuficientes"
 
-    api_request_json = {
-        "model": "llama3.1-70b",  # Substitua com o modelo correto
-        "messages": [{"role": "user", "content": prompt}],
-        "stream": False
-    }
+def comparar_classificacoes(df_classificacoes, df_gabarito):
+    if len(df_gabarito) != len(df_classificacoes):
+        print("Erro: O número de registros no gabarito e nas classificações não corresponde.")
+        return None, None, None, None
 
-    try:
-        response = llama.run(api_request_json)
+    y_true = df_gabarito['Classificacao_Verdadeira'].tolist()
+    y_pred = df_classificacoes.iloc[:, 1].str.strip().str.lower().tolist()
 
-        # Convertendo a resposta para um dicionário
-        response_dict = response.json()
+    # Mapear classificações preditas para categorias válidas
+    y_pred_mapeadas = [mapear_categoria(predicao) for predicao in y_pred]
 
-        # Verifique o que está retornando na resposta
-        print("Resposta da API:", response_dict)
+    # Garantir que as classificações reais também estejam padronizadas
+    y_true_mapeadas = [mapear_categoria(real) for real in y_true]
 
-        # Ajuste conforme a estrutura da resposta da API
-        classificacao = response_dict['choices'][0]['message']['content']
-        fim = time.time()  # Calcula o tempo gasto
-        return classificacao, fim - inicio
-    except Exception as e:
-        return f"Erro: {str(e)}", 0
+    # Calculando as métricas
+    accuracy = accuracy_score(y_true_mapeadas, y_pred_mapeadas)
+    precision, recall, f1, _ = precision_recall_fscore_support(y_true_mapeadas, y_pred_mapeadas, average='weighted', zero_division=0)
+    return accuracy, precision, recall, f1
 
-# Função para processar os links HTML
-def processar_links(arquivo_links):
-    try:
-        with open(arquivo_links, 'r', encoding='utf-8') as file:
-            links = file.readlines()
-    except FileNotFoundError:
-        print(f"Erro: O arquivo {arquivo_links} não foi encontrado.")
-        return
+# Caminhos dos arquivos
+classificacoes_path = "C:/AndroidStudio/apis/classificacao/resultados/resultadosmistral.xlsx"
+gabarito_path = "C:/AndroidStudio/apis/classificacao/gabarito.csv"
 
-    resultados = []
+# Ler os arquivos
+df_classificacoes = pd.read_excel(classificacoes_path)
+df_gabarito = ler_gabarito(gabarito_path)
 
-    for link in links:
-        link = link.strip()
-        try:
-            response = requests.get(link, timeout=10)
-            soup = BeautifulSoup(response.text, 'html.parser')
-            texto = soup.get_text(separator="\n").strip()
-
-            texto = '\n'.join([linha.strip() for linha in texto.split("\n") if len(linha.strip()) > 10])
-
-            if not texto.strip():
-                logging.info(f"Texto insuficiente ou ilegível para o link {link}.")
-                resultados.append({"Link": link, "Classificação": "Texto insuficiente ou ilegível", "Tempo de Resposta (s)": 0})
-                continue
-
-            # Classificar o contrato usando a API do Llama
-            classificacao, tempo_resposta = analisar_contrato_com_llama(texto)
-            resultados.append({"Link": link, "Classificação": classificacao, "Tempo de Resposta (s)": tempo_resposta})
-            logging.info(f"Resultado para o link {link}: {classificacao}")
-
-        except requests.exceptions.RequestException as e:
-            logging.error(f"Erro ao processar o link {link}: {e}")
-            resultados.append({"Link": link, "Classificação": f"Erro: {str(e)}", "Tempo de Resposta (s)": 0})
-
-    df = pd.DataFrame(resultados)
-    output_file = "classificacao_contratos_llama.xlsx"
-    df.to_excel(output_file, index=False)
-    print(f"Resultados salvos em {output_file}")
-
-# Caminho do arquivo contendo os links
-arquivo_links = r'C:\AndroidStudio\apis\testellama\links.csv'
-processar_links(arquivo_links)
-
+# Comparar classificações
+if df_gabarito is not None:
+    accuracy, precision, recall, f1 = comparar_classificacoes(df_classificacoes, df_gabarito)
+    print(f"Acurácia: {accuracy:.4f}")
+    print(f"Precisão: {precision:.4f}")
+    print(f"Recall: {recall:.4f}")
+    print(f"F1-Score: {f1:.4f}")
+else:
+    print("Erro ao carregar o gabarito.")

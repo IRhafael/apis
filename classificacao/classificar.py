@@ -1,94 +1,82 @@
 import pandas as pd
-from fuzzywuzzy import fuzz
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 
-# Função para ler o gabarito de classificação do arquivo CSV
+# Dicionário de categorias válidas com palavras-chave
+tipos_contrato = {
+    "Licenciamento de: patente": ["licenciamento", "patente", "exploração", "INPI", "tecnologia", "registro", "propriedade intelectual", "exclusividade"],
+    "Licenciamento de: programa de computador": ["licenciamento", "software", "programa de computador", "código-fonte", "direitos de uso", "desenvolvimento de software"],
+    "Licenciamento de: marcas": ["licenciamento", "marca", "registro de marca", "direitos de uso", "marca registrada", "branding"],
+    "Licenciamento de: desenho industrial": ["licenciamento", "desenho industrial", "design", "inovação", "propriedade intelectual", "design industrial"],
+    "Licenciamento de: cultivar": ["licenciamento", "cultivar", "sementes", "genética", "direitos de cultivar", "plantio", "biotecnologia"],
+    "Venda de: patente": ["venda", "patente", "transferência de direitos", "compra de patente", "direitos de patente", "comercialização"],
+    "Venda de: programa de computador": ["venda", "software", "programa de computador", "código-fonte", "transação", "licenciamento de software"],
+    "Venda de: marcas": ["venda", "marca", "transferência de marca", "comercialização de marca", "registro de marca", "transação de direitos"],
+    "Venda de: desenho industrial": ["venda", "desenho industrial", "design", "produto de design", "transferência de direitos", "design de produto"],
+    "Venda de: cultivar": ["venda", "cultivar", "sementes", "genética", "direitos de cultivo", "semeadura", "propriedade intelectual"],
+    "Cessão de uso": ["cessão", "uso", "autorização", "permissão de uso", "direitos de uso", "transferência temporária", "cedente"],
+    "Partilhamento de titularidade": ["partilhamento", "titularidade", "co-titularidade", "direitos compartilhados", "patente compartilhada", "colaboração de titularidade"],
+    "Encomenda tecnológica": ["encomenda", "tecnológica", "desenvolvimento", "contrato de encomenda", "inovação tecnológica", "produção tecnológica"],
+    "Serviço técnico especializado": ["serviço técnico", "consultoria", "assistência técnica", "especialização", "suporte especializado", "consultoria técnica"],
+    "Transferência de Know-how": ["transferência", "know-how", "tecnologia", "conhecimento técnico", "experiência", "transferência de conhecimento", "capacitação"],
+    "Acordo de parceria": ["acordo de parceria", "pesquisa", "desenvolvimento", "inovação", "colaboração", "cooperativa", "joint venture", "parceria", "acordo de colaboração"]
+}
+
 def ler_gabarito(gabarito_path):
-    df = pd.read_csv(gabarito_path, encoding='ISO-8859-1')  # Lê o arquivo CSV com a codificação adequada
-    
-    # Verificar se a coluna contém o separador ';' e dividir corretamente
-    try:
-        # Tentar separar a coluna em 'Link' e 'Classificacao_Verdadeira'
-        df[['Link', 'Classificacao_Verdadeira']] = df.iloc[:, 0].str.split(';', expand=True)
-    except ValueError as e:
-        print(f"Erro ao dividir a coluna: {e}")
-        print("Verifique se todos os dados estão no formato esperado (link;classificação).")
-        return None
-
-    # Remover espaços extras nas colunas
-    df['Link'] = df['Link'].str.strip()
-    df['Classificacao_Verdadeira'] = df['Classificacao_Verdadeira'].str.strip()
-
-    # Padronizar para minúsculas para garantir que a comparação seja feita sem sensibilidade a maiúsculas/minúsculas
-    df['Classificacao_Verdadeira'] = df['Classificacao_Verdadeira'].str.lower()
-
+    """
+    Lê o arquivo de gabarito contendo as classificações reais.
+    """
+    df = pd.read_csv(gabarito_path, encoding='ISO-8859-1')
+    df[['Link', 'Classificacao_Verdadeira']] = df.iloc[:, 0].str.split(';', expand=True)
+    df['Classificacao_Verdadeira'] = df['Classificacao_Verdadeira'].str.strip().str.lower()
     return df
 
-# Função para comparar as classificações
+def mapear_categoria(predicao):
+    """
+    Mapeia a classificação predita para a categoria correta com base no dicionário de palavras-chave.
+    """
+    for categoria, palavras_chave in tipos_contrato.items():
+        if any(palavra in predicao.lower() for palavra in palavras_chave):
+            return categoria
+    return "informações insuficientes"
+
 def comparar_classificacoes(df_classificacoes, df_gabarito):
-    # Verificar as colunas presentes nos DataFrames
-    print("Colunas do gabarito:", df_gabarito.columns)
-    print("Colunas das classificações:", df_classificacoes.columns)
-    
-    # Garantir que as classificações preditas e reais estão corretamente alinhadas
-    if df_classificacoes.shape[1] > 1 and df_gabarito.shape[1] > 1:
-        # A primeira coluna é a de links e a segunda a de classificação
-        y_true = df_gabarito['Classificacao_Verdadeira']  # Coluna com as classificações reais
-        y_pred = df_classificacoes.iloc[:, 1].str.strip().str.lower()  # Coluna com as classificações preditas
-        
-        # Alinhar os dados por índice
-        if len(df_gabarito) == len(df_classificacoes):
-            y_true = df_gabarito['Classificacao_Verdadeira']
-            y_pred = df_classificacoes.iloc[:, 1]
-        else:
-            print("Aviso: O número de links e classificações preditas não é o mesmo.")
-            return None, None, None, None
+    """
+    Compara as classificações preditas com o gabarito e calcula métricas de desempenho.
+    """
+    if len(df_gabarito) != len(df_classificacoes):
+        print("Erro: O número de registros no gabarito e nas classificações não corresponde.")
+        return None, None, None, None
 
-        # Categorias predefinidas para comparação
-        categorias_validas = [
-            "licenciamento de: patente", "licenciamento de: programa de computador", "licenciamento de: marcas",
-            "licenciamento de: desenho industrial", "licenciamento de: cultivar", "venda de: patente",
-            "venda de: programa de computador", "venda de: marcas", "venda de: desenho industrial", "venda de: cultivar",
-            "cessão de uso", "partilhamento de titularidade", "encomenda tecnológica", "serviço técnico especializado",
-            "transferência de know-how", "acordo de parceria"
-        ]
-        
-        # Verificar as primeiras classificações
-        print("Primeiras classificações reais:\n", y_true[:5])
-        print("Primeiras classificações preditas:\n", y_pred[:5])
+    y_true = df_gabarito['Classificacao_Verdadeira'].tolist()
+    y_pred = df_classificacoes.iloc[:, 1].str.strip().str.lower().tolist()
 
-        # Verificar se as classificações preditas estão dentro das categorias válidas
-        y_pred_validas = [cat if cat in categorias_validas else "informações insuficientes" for cat in y_pred]
-        y_true_validas = [cat if cat in categorias_validas else "informações insuficientes" for cat in y_true]
-        
-        # Verifique se as predições são válidas
-        print("Primeiras classificações preditas após validação:\n", y_pred_validas[:5])
-    
+    # Mapear classificações preditas para categorias válidas
+    y_pred_mapeadas = [mapear_categoria(predicao) for predicao in y_pred]
+
+    # Garantir que as classificações reais também estejam padronizadas
+    y_true_mapeadas = [mapear_categoria(real) for real in y_true]
+
     # Calculando as métricas
-    accuracy = accuracy_score(y_true_validas, y_pred_validas)
-    precision, recall, f1, _ = precision_recall_fscore_support(y_true_validas, y_pred_validas, average='weighted', zero_division=0)
-
+    accuracy = accuracy_score(y_true_mapeadas, y_pred_mapeadas)
+    precision, recall, f1, _ = precision_recall_fscore_support(y_true_mapeadas, y_pred_mapeadas, average='weighted', zero_division=0)
     return accuracy, precision, recall, f1
 
-# Caminho para o arquivo de classificações preditas (se for .xlsx)
-classificacoes_path = "C:/AndroidStudio/apis/classificacao/resultados/resultadosGPT.xlsx"  # Substitua com o arquivo real de classificações preditas
-
-# Caminho para o gabarito com as classificações reais (certifique-se de ter o arquivo como CSV)
-gabarito_path = "C:/AndroidStudio/apis/classificacao/gabarito.csv"  # Substitua com o caminho real do gabarito
+# Caminhos dos arquivos
+classificacoes_path = "C:/AndroidStudio/apis/classificacao/resultados/resultadosGPT.xlsx"
+gabarito_path = "C:/AndroidStudio/apis/classificacao/gabarito.csv"
 
 # Ler os arquivos
-df_classificacoes = pd.read_excel(classificacoes_path)  # Usando pd.read_excel para arquivos .xlsx
+df_classificacoes = pd.read_excel(classificacoes_path)
 df_gabarito = ler_gabarito(gabarito_path)
 
-# Comparar as classificações e calcular as métricas
+# Comparar classificações
 if df_gabarito is not None:
     accuracy, precision, recall, f1 = comparar_classificacoes(df_classificacoes, df_gabarito)
-
-    # Exibir as métricas
     print(f"Acurácia: {accuracy:.4f}")
     print(f"Precisão: {precision:.4f}")
     print(f"Recall: {recall:.4f}")
     print(f"F1-Score: {f1:.4f}")
 else:
-    print("Erro ao ler o gabarito, verifique o formato do arquivo.")
+    print("Erro ao carregar o gabarito.")
+
 
