@@ -62,7 +62,7 @@ def comparar_classificacoes(df_classificacoes, df_gabarito):
     return accuracy, precision, recall, f1
 
 # Caminhos dos arquivos
-classificacoes_path = "C:/AndroidStudio/apis/classificacao/resultados/resultadosGPT.xlsx"
+classificacoes_path = "C:/AndroidStudio/apis/classificacao/resultados/resultadosmistral.xlsx"
 gabarito_path = "C:/AndroidStudio/apis/classificacao/gabarito.csv"
 
 # Ler os arquivos
