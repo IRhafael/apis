@@ -1,20 +1,8 @@
-markdown
+
 # 📑 Sistema de Classificação Automática de Contratos de Inovação
 
 Pipeline para classificação de extratos contratuais do DOU usando APIs de IA (ChatGPT, LLaMA e Mistral), desenvolvido para o TCC em Análise e Desenvolvimento de Sistemas pelo Instituto Federal do Piaui.
 
-## 🔍 Visão Geral
-```mermaid
-flowchart LR
-    A[links04.csv] --> B(Extração de Texto)
-    B --> C{Classificação por IA}
-    C --> D[ChatGPT]
-    C --> E[LLaMA]
-    C --> F[Mistral]
-    D --> G[resultadosGPT.xlsx]
-    E --> H[resultadosLLAMA.xlsx]
-    F --> I[resultadosMistral.xlsx]
-    G --> J[Análise Comparativa]
 
 📂 Estrutura do Repositório
 
