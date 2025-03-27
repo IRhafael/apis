@@ -34,7 +34,7 @@ MISTRAL_KEY=...
 1.Preparação:
 
 
-git clone https://github.com/seu-usuario/APIS.git
+git clone https://github.com/IRhafael/apis.git
 cd APIS
 pip install -r requirements.txt
 2.Execução:
