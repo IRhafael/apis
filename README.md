@@ -29,22 +29,17 @@ OPENAI_KEY=sk-...
 LLAMA_KEY=...
 MISTRAL_KEY=...
 
- Passo a Passo
+- Passo a Passo -
 
 1.Preparação:
-
-
 git clone https://github.com/IRhafael/apis.git
 cd APIS
 pip install -r requirements.txt
 2.Execução:
-
-
 python scripts/api_gpt.py --input dados/links04.csv #caminho do arquivo com os links
---output resultadosa/resultadosGPT.xlsx #caminho do arquivo com os resultadop
+--output resultadosa/resultadosGPT.xlsx #caminho do arquivo com os resultados
 
 3.Saída Esperada (exemplo):
-
    URL	 |     Classificação
 --------------------------------
 [link1]	 |   "Acordo de Parceria"	
